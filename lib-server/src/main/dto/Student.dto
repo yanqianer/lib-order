@@ -1,0 +1,13 @@
+export com.zz.libserver.model.Student
+  -> package com.zz.libserver.model.dto
+
+
+input StudentDTO{
+  #allScalars(Student)
+  -id
+}
+
+input StatusDTo{
+  id
+  status
+}

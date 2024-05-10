@@ -1,0 +1,18 @@
+export com.zz.libserver.model.Admin
+  -> package com.zz.libserver.model.dto
+
+input AdminInput{
+  username
+  password
+}
+
+input AddAdminInput{
+  #allScalars(Admin)
+  -id
+}
+
+AdminOutput{
+  id
+  username
+  token:String
+}
